@@ -11,6 +11,7 @@ let nuevo = '';
 let first = `<!DOCTYPE html>
 <html lang="es">
 <head>
+<title>CipherVault</title>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/styles.css">
@@ -32,7 +33,7 @@ let first = `<!DOCTYPE html>
 let end = `</body></html>`;
 
 app.get('/favicon.ico', (req, res) => {
- res.status(204).end();
+ res.status(200).end();
 });
 
 app.get('/', (req, res) => {
