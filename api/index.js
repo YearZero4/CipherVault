@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path')
 const app = express();
-const PORT = 3002;
+const PORT = 3003;
 const css = path.join(__dirname, '../static');
 
 app.use(express.static(css));
@@ -50,7 +50,9 @@ app.post('/cipher', (req, res) => {
  }
  res.send(`${first}
  <div id="father-results">
+
  <div class="child-results">
+ <button id="copy">Copiar</button>
  <pre>${text0}</pre>
  </div>
  </div>
@@ -58,7 +60,7 @@ app.post('/cipher', (req, res) => {
  <script src="/script.js"></script>`);
 })
 
-module.exports = app;
+module.exports = app; 
 
 // app.listen(PORT, () => {
 //     console.log(`ESCUCHANDO POR EL PUERTO => ${PORT}`);
