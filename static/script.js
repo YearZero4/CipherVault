@@ -13,6 +13,6 @@ function copy() {
  }
  document.body.removeChild(textarea);
 }
-document.querySelector('.child-results').addEventListener('click', (event) => {
+document.getElementById('copy').addEventListener('click', (event) => {
 copy();
 });
